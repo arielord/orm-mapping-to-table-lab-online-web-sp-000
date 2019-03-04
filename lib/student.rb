@@ -22,6 +22,12 @@ class Student
     DB[:conn].execute(sql)
   end
   
+  def self.drop_table
+    sql = <<-SQL 
+      
+    SQL
+  end
+  
   def save
     sql = "INSERT INTO students VALUE(?, ?)"
     
