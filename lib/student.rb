@@ -17,9 +17,11 @@ class Student
         grade INTEGER
       )
     SQL
+    
+    DB[:conn].execute(sql)
   end
   
   def save
-    
+    sql = "INSERT INTO students VALUE()"
   end
 end
